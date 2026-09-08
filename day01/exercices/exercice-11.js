@@ -17,4 +17,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let panier = 500;
+let livraison = "Non";
+
+if (panier >= 200 && panier < 500) {
+    livraison = "Gratuite";
+} else if (panier >= 500) {
+    panier = panier + (panier * 0.10);
+    livraison = "Gratuite";
+}
+
+console.log(`Coût final: ${panier} MAD, Livraison: ${livraison}`);
