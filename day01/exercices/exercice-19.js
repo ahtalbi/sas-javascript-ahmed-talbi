@@ -6,7 +6,8 @@
  *
  * 🎯 MISSION
  * Déclarez : hasAccount = false, isGuest = true, cartValue = 150, isBanned = false.
- * Un utilisateur peut valider sa commande s'il n'est pas banni, ET (il a un compte OU il est invité avec un panier > 100). Évaluez cette règle.
+ * Un utilisateur peut valider sa commande s'il n'est pas banni,
+ * ET (il a un compte OU il est invité avec un panier > 100). Évaluez cette règle.
  *
  * RÉSULTAT ATTENDU
  * Commande validée
@@ -18,3 +19,8 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
+let hasAccount = false, isGuest = true, cartValue = 150, isBanned = false;
+
+if (!isBanned && (hasAccount || cartValue > 100)) {
+    console.log("Commande validée");
+}

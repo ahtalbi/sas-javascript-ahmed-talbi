@@ -17,3 +17,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
+let a = 3, b = 4, c = 5;
+
+let somme = a + b + c;
+if (a < somme && b < somme && c < somme) {
+    console.log("Triangle valide");
+}

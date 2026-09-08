@@ -5,7 +5,9 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Vous récupérez des données utilisateur incomplètes : nom = null, pseudo = "NinjaCoder". En JavaScript, on peut utiliser l'opérateur de coalescence des nuls (??) ou l'opérateur OU (||) pour assigner une valeur par défaut. Déclarez nomAAfficher = nom ?? pseudo ?? "Anonyme". Affichez-le.
+ * Vous récupérez des données utilisateur incomplètes : nom = null, pseudo = "NinjaCoder". 
+ * En JavaScript, on peut utiliser l'opérateur de coalescence des nuls (??) ou l'opérateur OU (||) 
+ * pour assigner une valeur par défaut. Déclarez nomAAfficher = nom ?? pseudo ?? "Anonyme". Affichez-le.
  *
  * RÉSULTAT ATTENDU
  * NinjaCoder
@@ -17,3 +19,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
+let nom = null, pseudo = "NinjaCoder";
+let nomAAfficher = nom ?? pseudo ?? "Anonyme";
+console.log(nomAAfficher);
