@@ -5,7 +5,9 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Vous avez extrait d'un site e-commerce la chaîne suivante : prixExtrait = "  349.99 MAD  ". Utilisez des méthodes de base (que vous pouvez chercher, ex: trim, replace) pour ne garder que "349.99" et convertissez-le en type Number. Calculez ensuite le prix total pour 2 articles.
+ * Vous avez extrait d'un site e-commerce la chaîne suivante : prixExtrait = "  349.99 MAD  ". Utilisez des méthodes de base 
+ * (que vous pouvez chercher, ex: trim, replace) pour ne garder que "349.99" et convertissez-le en type Number.
+ *  Calculez ensuite le prix total pour 2 articles.
  *
  * RÉSULTAT ATTENDU
  * 699.98 (de type Number)
@@ -17,4 +19,5 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let prixExtrait = "  349.99 MAD  ";
+console.log(Number(prixExtrait.trim().split(" ")[0]) * 2);
