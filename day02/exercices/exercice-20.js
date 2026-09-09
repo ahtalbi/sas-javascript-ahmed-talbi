@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+for (let i = 100; i <= 999; i++) {
+    let str = String(i);
+    let sum = 0;
+    for (let chr of str) {
+        sum += chr ** str.length;
+    }
+    if (sum == i) {
+        console.log(i);
+    }
+}

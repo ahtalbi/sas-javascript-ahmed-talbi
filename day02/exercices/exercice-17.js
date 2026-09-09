@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let totalItems = 45;
+let pageNumber = 1;
+while (totalItems > 0) {
+    if (totalItems < 10) {
+        console.log(`Scraping page ${pageNumber} (${totalItems} items)`);
+    } else {
+        console.log(`Scraping page ${pageNumber} (10 items)`);
+    }
+    totalItems -= 10;
+    pageNumber++;
+}
