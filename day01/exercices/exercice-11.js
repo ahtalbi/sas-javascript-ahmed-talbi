@@ -23,7 +23,7 @@ let livraison = "Non";
 if (panier >= 200 && panier < 500) {
     livraison = "Gratuite";
 } else if (panier >= 500) {
-    panier = panier + (panier * 0.10);
+    panier = panier - (panier * 0.10);
     livraison = "Gratuite";
 }
 
