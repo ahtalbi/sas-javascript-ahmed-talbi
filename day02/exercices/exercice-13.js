@@ -22,3 +22,4 @@ for (let i = 1; i <= 10; i++) {
     n1 = n2;
     n2 = n2 + temp;
 }
+console.log(n1);
