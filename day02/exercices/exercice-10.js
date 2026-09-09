@@ -17,4 +17,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let n = 6;
+let res = 1;
+while (n > 0) {
+    res = res * n;
+    n--;
+}
+console.log(res);
