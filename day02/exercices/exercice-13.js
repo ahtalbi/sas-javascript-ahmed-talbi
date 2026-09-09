@@ -22,4 +22,8 @@ for (let i = 1; i <= 10; i++) {
     n1 = n2;
     n2 = n2 + temp;
 }
+<<<<<<< HEAD
 console.log(n1);
+=======
+console.log(n1);
+>>>>>>> 1745d96dcdd49c06e1d439056067141558c2d244
