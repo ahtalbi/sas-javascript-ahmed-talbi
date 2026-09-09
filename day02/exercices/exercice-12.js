@@ -15,10 +15,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 let nb = 29;
+let np = false;
 for (let i = 2; i <= 28; i++) {
     if (nb % i == 0) {
         console.log(`le nombre ${nb} et pas un premier nombre`);
-        return;
+        np = true;
     }
 }
-console.log("29 est un nombre premier");
+if (!np) console.log("29 est un nombre premier");
