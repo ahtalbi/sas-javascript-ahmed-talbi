@@ -29,7 +29,6 @@ for (let i = 0; i <= 9; i++) {
             let number = i * 100 + j * 10 + k;
             if (number === codeSecret) {
                 console.log(`Code trouvé : 739 après ${counter} essais`);
-                return;
             }
             counter++;
         }
