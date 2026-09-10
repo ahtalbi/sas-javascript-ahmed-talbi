@@ -7,9 +7,9 @@
 
 | Information | À compléter |
 |---|---|
-| Nom et prénom | ... |
-| Classe | ... |
-| Nom d'utilisateur GitHub | ... |
+| Nom et prénom | Talbi Ahmed |
+| Classe | A |
+| Nom d'utilisateur GitHub | ahtalbi |
 
 ## 🧭 Comment travailler
 
