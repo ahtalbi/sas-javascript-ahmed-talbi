@@ -15,4 +15,7 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let res = "";
+let text = "Hyper Text Markup Language";
+text = text.split(" ").map(mot => mot[0]).join("");
+console.log(text);
