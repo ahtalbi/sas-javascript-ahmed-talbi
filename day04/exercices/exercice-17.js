@@ -14,4 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function chiffrerCesar(texte, decalage) {
+    let res = "";
+
+    for (let c of texte) {
+
+        if (c >= 'a' && c <= 'z') {
+            c = String.fromCharCode((c.charCodeAt(0) - 'a'.charCodeAt(0) + decalage) % 26 + 'a'.charCodeAt(0));
+        } else if (c >= 'A' && c <= 'Z') {
+            c = String.fromCharCode((c.charCodeAt(0) - 'A'.charCodeAt(0) + decalage) % 26 + 'A'.charCodeAt(0));
+        }
+
+        res += c;
+    }
+
+    return res;
+}

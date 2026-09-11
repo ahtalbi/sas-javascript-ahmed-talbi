@@ -14,4 +14,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let mot = "hello world  i am    ahmed";
+let mots = mot.split(" ").filter(mot => mot != '');
+console.log(mots.length);

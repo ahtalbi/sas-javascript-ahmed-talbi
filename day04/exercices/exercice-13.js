@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function formater(montant) {
+    if (typeof montant === "number") montant = "" + montant;
+    let res = [];
+    while (montant.length > 0) {
+        res.push(montant.slice(-3));
+        montant = montant.slice(0, -3);
+    }
+    return res.reverse().join(" ") + " MAD";
+}
+
+console.log(formater("1234567"));
