@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let letter = 'e';
+function compteur(str) {
+    let res = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() == letter) {
+            res++;
+        }
+    }
+    return res;
+}
+
+console.log(compteur("hello world"))

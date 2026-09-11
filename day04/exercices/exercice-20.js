@@ -16,4 +16,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let url = "Les 10 secrets de JavaScript !";
+
+url = url.split(" ");
+url = url.map(word => word.replace(/[!?.,;:]/g, ""));
+url = url.filter(word => word !== "").join("-").toLowerCase();
+
+console.log(url); 
