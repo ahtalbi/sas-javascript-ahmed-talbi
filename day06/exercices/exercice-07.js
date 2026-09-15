@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let tableau = [];
+
+for (let i = 1; i <= 3; i++) {
+    let titre = "livre " + i;
+    let auteur = "auteur " + i;
+    tableau.push({"titre": titre, "auteur": auteur});
+}
+
+console.log(tableau[1].titre);
