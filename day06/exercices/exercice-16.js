@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let entreprise = {
+    nom: "hexops",
+    employes: [
+        {
+            nom: "ahmed",
+            prenom: "fox"
+        },
+        {
+            nom: "zohir",
+            prenom: "elbaz"
+        },
+    ]
+}
+
+console.log(entreprise.employes[1].prenom);
