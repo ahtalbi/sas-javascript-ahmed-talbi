@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let compteBancaire = {
+    solde: 2000,
+
+    deposer(montant) {
+        this.solde += montant;
+    }
+};
+
+console.log(compteBancaire.solde);
+compteBancaire.deposer(10);
+console.log(compteBancaire.solde);
