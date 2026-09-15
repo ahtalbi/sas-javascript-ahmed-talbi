@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let str = "abracadabra";
+
+function countChars(str) {
+    let res = {};
+    for (let c of str) {
+        if (Object.hasOwn(res, c)) {
+            res[c] += 1;
+        } else {
+            res[c] = 1;
+        }
+    }
+    return res;
+}
+
+console.log(countChars(str));
