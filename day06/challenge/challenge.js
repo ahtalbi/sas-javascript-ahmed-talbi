@@ -19,5 +19,49 @@
  */
 'use strict';
 
-// Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let utilisateurs = [];
+
+let id = 1;
+function ajouterUtilisateur(nom, email) {
+    utilisateurs.push({id: id, nom: nom, email: email});
+    id++;
+}
+
+function trouverParEmail(email) {
+    let res = {};
+    for (let user of utilisateurs) {
+        if (user.email === email) {
+            return user;
+        }
+    }
+    return null;
+}
+
+function supprimerParId(id) {
+    let res = [];
+    for (let i = 0; i < utilisateurs.length; i++) {
+        if (utilisateurs[i].id !== id) {
+            res.push(utilisateurs[i]);
+        }
+    }
+    utilisateurs = [...res];
+}
+
+function afficherAnnuaire() {
+    if (utilisateurs.length === 0) console.log("L'annuaire est vide.");
+    for (let user of utilisateurs) {
+        console.log(`ID: ${user.id} | Nom: ${user.nom} | Email: ${user.email}`);
+    }
+}
+
+ajouterUtilisateur("rania", "rania@email.com");
+ajouterUtilisateur("ahmed", "ahmed@email.com");
+ajouterUtilisateur("zohir", "zohir@email.com");
+console.log(utilisateurs);
+
+console.log(trouverParEmail("ahmed@email.com"));
+
+supprimerParId(1);
+console.log(utilisateurs);
+
+afficherAnnuaire();
