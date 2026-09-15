@@ -14,4 +14,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let list = [{ article: "PC", prix: "1500$" }, { article: "Souris", prix: "25$" }];
+
+function deletDollarSign(list) {
+    for (let i = 0; i < list.length; i++) {
+        let prix = list[i].prix;
+        list[i].prix = prix.slice(0, prix.length - 1) * 1;
+    }
+}
+
+console.log(list);
+deletDollarSign(list)
+console.log(list);

@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function sontIdentiques(obj1, obj2) {
+    return JSON.stringify(obj1) == JSON.stringify(obj2);
+}
+
+console.log(sontIdentiques({a: 1, b: 2}, {a: 1, b: 2}));
